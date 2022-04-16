@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Blender</title>
+  <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+</head>
+
+<body>
+  <main id="mainContainer">
+
+    <nav id="topMenu">
+      <img src="logo.png" width="10" height="10"/>
+      <div id="fileMenu">
+        <span id="file" class="fileMenuChild">File</span>
+        <span id="file" class="fileMenuChild">Edit</span>
+        <span id="file" class="fileMenuChild">Render</span>
+        <span id="file" class="fileMenuChild">Window</span>
+        <span id="file" class="fileMenuChild">Help</span>
+      </div>
+
+      <div id="windowsMenu">
+        <span id="layout" class="windows">Layout</span>
+        <span id="modeling" class="windows">Modeling</span>
+        <span id="sculpting" class="windows">Sculpting</span>
+        <span id="uvEditing" class="windows">UV Editing</span>
+        <span id="texturePaint" class="windows">Texture Paint</span>
+        <span id="shading" class="windows">Shading</span>
+        <span id="animation" class="windows">Animation</span>
+        <span id="rendering" class="windows">Rendering</span>
+        <span id="compositing" class="windows">Compositing</span>
+        <span id="geometryNodes" class="windows">Geometry Nodes</span>
+        <span id="scripting" class="windows">Scripting</span>
+      </div>
+
+      <div id="sceneManager">
+        <img src="images/menu/sceneManagerLogo.png" class="logo" alt=""/>
+      </div>
+    </nav>
+
+    <div id="3DWorldContainer">
+      <canvas id="3DWorld"></canvas>
+    </div>
+    <div id="sceneCollection"></div>
+    <div id="propertiesContainer">
+      <div id="iconsProperties"></div>
+      <div id="properties">
+        <div id="texture" class="properties"></div>
+        <div id="texture" class="properties"></div>
+        <div id="texture" class="properties"></div>
+        <div id="texture" class="properties"></div>
+      </div>
+    </div>
+
+    <div id="timeline">
+
+    </div>
+    <footer></footer>
+  </main>
+
+
+
+
+</body>
+</html>
+
+
+<script src="scripts/utilities.js"></script>
+<script type="module" src="scripts/scripts.js"></script>
